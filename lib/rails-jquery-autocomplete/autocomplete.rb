@@ -63,7 +63,7 @@ module RailsJQueryAutocomplete
 
           term = params[:term]
 
-          if term && !term.blank?
+          if term
             #allow specifying fully qualified class name for model object
             class_name = options[:class_name] || object
             items = get_autocomplete_items(:model => get_object(class_name), \
